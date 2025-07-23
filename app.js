@@ -1,7 +1,8 @@
 const express = require("express");
-const books = require("./routes/books");
-const authors = require("./routes/authors");
-const auth = require("./routes/auth");
+const booksPath = require("./routes/books");
+const authorsPath = require("./routes/authors");
+const authPath = require("./routes/auth");
+const usersPath = require("./routes/users");
 const mongoose = require("mongoose");
 const logger = require("./middlewares/logger");
 const {notFound, errorHandler} = require("./middlewares/errors");
@@ -17,9 +18,10 @@ const app = express();
 
 app.use(express.json());
 app.use(logger);
-app.use("/api/books", books);
-app.use("/api/authors", authors);
-app.use("/api/auth", auth);
+app.use("/api/books", booksPath);
+app.use("/api/authors", authorsPath);
+app.use("/api/auth", authPath);
+app.use("/api/users", usersPath);
 
 app.use(notFound);
 app.use(errorHandler);

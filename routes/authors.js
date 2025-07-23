@@ -3,14 +3,12 @@ const router = express.Router();
 const asyncHandler = require("express-async-handler");
 const {Author, validateCreateAuthor, validateUpdateAuthor} = require("../models/Author");
 
-
 /**
  * @description Get all authors
  * @route /api/authors
  * @method GET
  * @access public
  */
-
 router.get("/", asyncHandler(
     async (req, res) =>{
         const authorList = await Author.find();
