@@ -2,6 +2,7 @@ const express = require("express");
 const books = require("./routes/books");
 const authors = require("./routes/authors");
 const mongoose = require("mongoose");
+const logger = require("./middlewares/logger");
 const dotenv = require("dotenv");
 dotenv.config();
 
@@ -13,6 +14,7 @@ mongoose
 const app = express();
 
 app.use(express.json());
+app.use(logger);
 app.use("/api/books", books);
 app.use("/api/authors", authors);
 
