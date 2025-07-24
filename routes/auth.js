@@ -32,7 +32,7 @@ router.post("/register", asyncHandler(async (req, res) => {
     });
 
     const result = await user.save();
-    const token = jwt.sign({id: user._id, isAdmin: user.isAdmin}, process.env.JWT_SECRET_KEY);
+    const token = user.generateToken();
     const {password, ...other} = result._doc;
     res.status(201).json({...other, token});
 }));
@@ -59,7 +59,7 @@ router.post("/login", asyncHandler(async (req, res) => {
         return res.status(400).json({message: "invalid email or password"});
     }
 
-    const token = jwt.sign({id: user._id, isAdmin: user.isAdmin}, process.env.JWT_SECRET_KEY);
+    const token = user.generateToken();
     const {password, ...other} = user._doc;
     res.status(200).json({...other, token});
 }));
