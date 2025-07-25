@@ -4,6 +4,8 @@ const { notFound, errorHandler } = require("./middlewares/errors");
 const connectToDB = require("./config/db");
 require("dotenv").config();
 const path = require("path");
+const helmet = require("helmet");
+const cors = require("cors");
 
 connectToDB();
 
@@ -13,6 +15,8 @@ app.set("view engine", "ejs");
 
 app.use(express.static(path.join(__dirname, "images")));
 app.use(express.json());
+app.use(helmet());
+app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(logger);
 app.use("/api/books", require("./routes/books"));
