@@ -2,6 +2,7 @@ const asyncHandler = require("express-async-handler");
 const { User } = require("../models/User");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
+const nodemailer = require("nodemailer");
 
 /**
  * @description Get Forgot Password View
@@ -29,27 +30,33 @@ module.exports.sendForgotPasswordLink = asyncHandler(async (req, res) => {
     expiresIn: "10m",
   });
   const link = `http://localhost:5000/password/reset-password/${user._id}/${token}`;
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.USER_EMAIL,
+      pass: process.env.USER_PASS,
+    },
+  });
 
-  res.send(`
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Reset Password Link</title>
-    <style>
-      body { font-family: sans-serif; padding: 30px; background: #f1f1f1; }
-      .box { background: white; padding: 20px; border-radius: 10px; max-width: 600px; margin: auto; text-align: center; }
-      a { word-break: break-all; font-size: 18px; }
-    </style>
-  </head>
-  <body>
-    <div class="box">
-      <h2>Click the link below to reset your password:</h2>
-      <a href="${link}">${link}</a>
-    </div>
-  </body>
-  </html>
-`);
+  const mailOptions = {
+    from: process.env.USER_EMAIL,
+    to: user.email,
+    subject: "Reset Password",
+    html: `<div>
+             <h4>Click on the link below to reser your password</h4>
+             <>${link}</p>
+           </div>`,
+  };
+
+  transporter.sendMail(mailOptions, function (error, success) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log("Email sent : " + success.response);
+    }
+  });
+
+  res.render("link-send");
 });
 
 /**
