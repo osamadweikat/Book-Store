@@ -2,6 +2,7 @@
   height: 250px;
   width: 100%;
   background-color: var(--primary-color);
+  position: relative;
 }
 
 .header-top {
@@ -15,6 +16,10 @@
 
 .header-top-menu {
   display: none;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--main-color);
 }
 
 .header-top-phone,
@@ -111,4 +116,84 @@
 
 .navbar-link:hover {
   background-color: snow;
+}
+
+@media (max-width: 990px) {
+  .header-middle-search-box {
+    width: 600px;
+  }
+}
+
+@media (max-width: 920px) {
+  .header-middle-search-box {
+    width: 450px;
+  }
+
+  .header-top-text {
+    font-size: 17px;
+  }
+
+  .header-middle-logo {
+    font-size: 17px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 720px) {
+  .header-top-text {
+    display: none;
+  }
+
+  .header-top-menu {
+    display: block;
+  }
+
+  .header-middle {
+    flex-wrap: wrap;
+    padding: 0 30px;
+    height: 80%;
+  }
+
+  .header-middle-search-box {
+    width: 100%;
+  }
+
+  .header-middle-logo {
+    display: none;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 50px;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    align-items: flex-start;
+    z-index: 999;
+    transition: all 1s ease;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: max-content;
+    width: 100%;
+  }
+
+  .navbar-link {
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .header-top,
+  .header-middle {
+    padding: 0 15px;
+  }
+
+  .header-top-phone {
+    font-size: 20px;
+  }
 }

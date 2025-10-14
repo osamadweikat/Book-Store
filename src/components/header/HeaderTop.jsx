@@ -1,8 +1,15 @@
-export default function HeaderTop() {
+export default function HeaderTop({ toggle, setToggle }) {
   return (
     <div className="header-top">
-      <div className="header-top-menu">
-        <i className="bi bi-list"></i>
+      <div
+        onClick={() => setToggle((prev) => !prev)}
+        className="header-top-menu"
+      >
+        {toggle ? (
+          <i className="bi bi-x-lg"></i>
+        ) : (
+          <i className="bi bi-list"></i>
+        )}
       </div>
       <div className="header-top-phone">
         <i className="bi bi-telephone-fill"></i>0123-456-789
