@@ -29,3 +29,56 @@
 .header-top-link i {
   margin-right: 4px;
 }
+
+.header-middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  height: 50%;
+}
+
+.header-middle-logo {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.header-middle-logo i {
+  margin: 0 6px;
+  font-size: 40px;
+}
+
+.header-middle-search-box {
+  width: 700px;
+  background-color: white;
+  height: 60px;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.header-middle-search-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 25px;
+  font-size: 24px;
+}
+
+.header-middle-search-box .bi-search {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  font-size: 40px;
+  color: gray;
+}
+
+.header-middle-cart-wrapper i {
+  font-size: 44px;
+  color: white;
+  cursor: pointer;
+}
