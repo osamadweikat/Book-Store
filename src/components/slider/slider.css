@@ -95,7 +95,7 @@
 }
 
 .slide-info-desc {
-  margin: 21px 0;
+  margin: 21px;
   font-size: 24px;
   font-weight: 500;
   letter-spacing: 3px;
@@ -103,8 +103,8 @@
 
 html,
 body {
-  overflow: hidden;
-  height: 100%;
+  overflow-x: hidden;
+  height: auto;
 }
 
 @media (max-width: 720px) {
@@ -123,6 +123,18 @@ body {
 
 @media (max-width: 520px) {
   .slider-container {
-    display: none;
+    display: block;
+    height: auto;
+  }
+
+  .slide {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .slide-image-wrapper,
+  .slide-info-wrapper {
+    width: 100%;
   }
 }
