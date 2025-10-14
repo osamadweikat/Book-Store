@@ -1,0 +1,31 @@
+.header {
+  height: 250px;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20%;
+  padding: 0 30px;
+  border-bottom: 1px solid var(--main-color);
+}
+
+.header-top-menu {
+  display: none;
+}
+
+.header-top-phone,
+.header-top-text,
+.header-top-link {
+  font-size: 27px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.header-top-phone i,
+.header-top-link i {
+  margin-right: 4px;
+}
