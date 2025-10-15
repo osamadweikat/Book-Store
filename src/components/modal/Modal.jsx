@@ -23,7 +23,7 @@ export default function Modal({ bookData, setOpenModal }) {
             <b>Author: </b> {author}
           </div>
           <div className="modal-content-info-price">
-            <b>Price: </b> {price}
+            <b>Price: </b> ${price}
           </div>
           <div className="modal-add-to-cart">
             <input
