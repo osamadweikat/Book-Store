@@ -3,7 +3,7 @@ export const books = [
     id: 1,
     price: 10.5,
     rating: 5,
-    title: "Atomic Habits:Proven Way To Build Good Habits",
+    title: "Atomic Habits: Proven Way To Build Good Habits",
     author: "James Clear",
     reviews: "69,548",
     image: "atomic-habits.jpg",
@@ -11,6 +11,8 @@ export const books = [
     language: "English",
     PublicationDate: "16 April 2018",
     inStock: true,
+    description:
+      "Atomic Habits offers a proven framework for improving every day. James Clear reveals practical strategies for forming good habits, breaking bad ones, and mastering the tiny behaviors that lead to remarkable results. Drawing on scientific research, he shows how small, consistent changes compound over time to create massive success. This book helps readers design their environment and mindset for lasting transformation.",
   },
   {
     id: 2,
@@ -24,6 +26,8 @@ export const books = [
     language: "English",
     PublicationDate: "1 March 2015",
     inStock: true,
+    description:
+      "Confess is a powerful and emotional love story that explores secrets, regret, and forgiveness. When Auburn Reed walks into Owen Gentry’s art studio, she doesn’t expect her life to change forever. Hoover masterfully blends art, emotion, and destiny in a narrative that keeps readers on edge. The novel dives deep into how love can heal even the most painful pasts while revealing the beauty of truth.",
   },
   {
     id: 3,
@@ -37,6 +41,8 @@ export const books = [
     language: "English",
     PublicationDate: "1 June 2019",
     inStock: true,
+    description:
+      "The Trouble With Hating You is a witty romantic comedy full of heart and humor. It follows Liya Thakkar, a successful engineer who avoids marriage, and Jay Shah, the man her parents want her to marry. When fate throws them together at work, sparks fly—both fiery and romantic. Sajni Patel delivers a bold story about love, independence, cultural identity, and learning to open your heart.",
   },
   {
     id: 4,
@@ -50,19 +56,23 @@ export const books = [
     language: "English",
     PublicationDate: "8 October 2012",
     inStock: true,
+    description:
+      "Hopeless is an emotional rollercoaster that explores deep trauma, love, and redemption. Sky meets Dean Holder, a mysterious boy with a dark past, and her world begins to unravel as painful truths surface. Colleen Hoover crafts a raw and heart-wrenching narrative that grips readers from start to finish. This story reminds us that sometimes facing the past is the only way to find hope for the future.",
   },
   {
     id: 5,
     price: 8,
     rating: 4,
     title: "Rich Dad Poor Dad",
-    author: "Robert T.Kiyosaki",
+    author: "Robert T. Kiyosaki",
     reviews: "8,661",
     image: "rich-dad-poor-dad.jpg",
     printLength: 336,
     language: "English",
     PublicationDate: "27 April 2017",
     inStock: true,
+    description:
+      "Rich Dad Poor Dad challenges the conventional approach to money and education. Robert Kiyosaki shares lessons he learned from his two fathers—his real father (poor dad) and the father of his best friend (rich dad). The book reveals how to think differently about wealth, investments, and financial independence. It encourages readers to build assets, take risks, and achieve financial freedom through smart choices.",
   },
   {
     id: 6,
@@ -76,19 +86,23 @@ export const books = [
     language: "English",
     PublicationDate: "17 July 2016",
     inStock: true,
+    description:
+      "One True Loves is a captivating exploration of love, loss, and destiny. Emma’s life is torn apart when her husband Jesse disappears in a helicopter crash. Years later, she finds happiness again—until Jesse unexpectedly returns. Taylor Jenkins Reid weaves a heartfelt story about how people change and grow, forcing readers to ask: can a person have more than one true love? It’s both heartbreaking and hopeful.",
   },
   {
     id: 7,
     price: 11.05,
     rating: 4.5,
     title: "Think And Grow Rich",
-    author: "Napolen Hill",
+    author: "Napoleon Hill",
     reviews: "57,521",
     image: "think-and-grow-rich.jpg",
     printLength: 320,
     language: "English",
     PublicationDate: "1 September 2005",
     inStock: true,
+    description:
+      "Think and Grow Rich remains one of the most influential success books ever written. Napoleon Hill draws on stories of great achievers like Edison and Ford to reveal the principles behind personal wealth and accomplishment. He emphasizes the power of thought, persistence, and faith in achieving any goal. This timeless guide inspires readers to turn their dreams into reality through discipline and mindset mastery.",
   },
   {
     id: 8,
@@ -102,6 +116,8 @@ export const books = [
     language: "English",
     PublicationDate: "23 March 2017",
     inStock: true,
+    description:
+      "Never Split the Difference takes readers inside the high-stakes world of FBI hostage negotiations. Former FBI negotiator Chris Voss shares powerful tactics that can be applied to business and everyday life. Through real-life stories and psychological insights, he shows how to win negotiations without aggression. This book teaches you how to use empathy, communication, and emotional intelligence to achieve better results.",
   },
   {
     id: 9,
@@ -115,6 +131,8 @@ export const books = [
     language: "English",
     PublicationDate: "4 December 2018",
     inStock: true,
+    description:
+      "Good Vibes, Good Life is an inspiring guide to self-love and personal growth. Vex King shares practical lessons on how to overcome negativity, heal from past pain, and attract positive energy. Through simple wisdom and heartfelt storytelling, the book encourages readers to embrace gratitude, mindfulness, and self-worth. It’s a roadmap for creating a happier, more fulfilling life from the inside out.",
   },
   {
     id: 10,
@@ -128,5 +146,7 @@ export const books = [
     language: "English",
     PublicationDate: "12 September 2021",
     inStock: true,
+    description:
+      "The Story of a Lonely Boy is a touching narrative about isolation, resilience, and hope. It follows a young boy struggling to find connection in a world that often misunderstands him. Through poetic language and emotional depth, Villanueva explores the pain of loneliness and the power of self-discovery. The novel beautifully captures the universal desire to belong and to be truly seen.",
   },
 ];
