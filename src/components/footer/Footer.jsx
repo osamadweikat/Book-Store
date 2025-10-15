@@ -63,9 +63,7 @@ export default function Footer() {
             all generations. Whether you're searching for self-development,
             fiction, or academic titles, our carefully curated collection
             ensures that every visitor finds the perfect book to match their
-            taste. We strive to make reading more accessible and enjoyable
-            through quality service, fast delivery, and a passion for great
-            books that lasts a lifetime.
+            taste.
           </p>
         </div>
       </div>
