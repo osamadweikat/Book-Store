@@ -119,7 +119,7 @@ export const books = [
   {
     id: 10,
     price: 11.75,
-    rating: 4.7,
+    rating: 4.5,
     title: "The Story of a Lonely Boy",
     author: "Korina Villanueva",
     reviews: "56,204",

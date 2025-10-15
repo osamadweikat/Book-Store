@@ -1,4 +1,4 @@
-export default function Rating({ rating, reviwes }) {
+export default function Rating({ rating, reviews }) {
   return (
     <div className="rating">
       {rating >= 1 ? (
@@ -37,7 +37,7 @@ export default function Rating({ rating, reviwes }) {
         <i className="bi bi-star"></i>
       )}
       <span>{rating}</span>
-      <span>({reviwes} reviwes)</span>
+      <span>({reviews} reviwes)</span>
     </div>
   );
 }
