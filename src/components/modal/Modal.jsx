@@ -4,8 +4,11 @@ import Rating from "../book-slider/Rating";
 export default function Modal({ bookData, setOpenModal }) {
   const { image, title, inStock, rating, reviews, author, price } = bookData;
   return (
-    <div className="modal-contianer">
-      <div className="modal-content">
+    <div onClick={() => setOpenModal(false)} className="modal-contianer">
+      <div
+        onClick={(event) => event.stopPropagation()}
+        className="modal-content"
+      >
         <i
           onClick={() => setOpenModal(false)}
           className="bi bi-x-circle-fill modal-icon"
