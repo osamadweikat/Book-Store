@@ -1,0 +1,75 @@
+.footer {
+  padding: 10px 30px;
+  background-color: var(--primary-color);
+}
+
+.footer-social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--main-color);
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.footer-social-media-text {
+  color: var(--main-color);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.footer-social-media-icons {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social-media-icon {
+  margin: 0 15px;
+  background-color: var(--main-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer-social-media-icon i {
+  font-size: 32px;
+}
+
+.bi-facebook {
+  color: #1877f2;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.bi-instagram {
+  color: #e1306c;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.bi-youtube {
+  color: #ff0000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.bi-twitter {
+  color: #1da1f2;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.bi-snapchat {
+  color: #ffcc00;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.bi-facebook:hover,
+.bi-instagram:hover,
+.bi-youtube:hover,
+.bi-twitter:hover,
+.bi-snapchat:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+  filter: brightness(1.2);
+}
