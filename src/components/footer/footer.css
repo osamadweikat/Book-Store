@@ -105,6 +105,7 @@
   margin-bottom: 10px;
   cursor: pointer;
   width: max-content;
+  text-decoration: none;
 }
 
 .footer-link:hover {

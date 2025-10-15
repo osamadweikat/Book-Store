@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function FooterLinks() {
   return (
     <div className="footer-links">
@@ -5,11 +7,31 @@ export default function FooterLinks() {
         <div className="footer-links-item">
           <h3 className="footer-links-item-title">Usefull Links</h3>
           <ul className="footer-links">
-            <li className="footer-link">Home</li>
-            <li className="footer-link">Authors</li>
-            <li className="footer-link">About Us</li>
-            <li className="footer-link">Contact Us</li>
-            <li className="footer-link">Register</li>
+            <li>
+              <Link to="/" className="footer-link">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/authors" className="footer-link">
+                Authors
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="footer-link">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="footer-link">
+                Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link to="/register" className="footer-link">
+                Register
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="footer-links-item">
