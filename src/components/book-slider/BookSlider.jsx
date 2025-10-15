@@ -3,6 +3,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import Rating from "./Rating";
 
 export default function BookSlider({ data }) {
   return (
@@ -28,7 +29,7 @@ export default function BookSlider({ data }) {
                 className="book-slide-item-img"
               />
               <h3 className="book-slide-item-title">{item.title}</h3>
-              <div className="rating">rating</div>
+              <Rating rating={item.rating} reviwes={item.reviwes} />
               <div className="book-slider-item-price">${item.price}</div>
               <div className="book-slider-icons-wrapper">
                 <i className="bi bi-eye-fill"></i>
