@@ -3,8 +3,8 @@ import "./book-slider.css";
 export default function BookSlider({ data }) {
   return (
     <div className="book-slider-container">
-      <i className="bi bi-chevron-left"></i>
-      <div className="book-slide-wrapper">
+      <i className="bi bi-chevron-left book-slider-arrow-left"></i>
+      <div className="book-slider-wrapper">
         {data.map((item) => (
           <div key={item.id} className="book-slide-item">
             <img
@@ -22,7 +22,7 @@ export default function BookSlider({ data }) {
           </div>
         ))}
       </div>
-      <i className="bi bi-chevron-right"></i>
+      <i className="bi bi-chevron-right book-slider-arrow-right"></i>
     </div>
   );
 }
