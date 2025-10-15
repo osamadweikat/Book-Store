@@ -4,8 +4,18 @@ import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import Rating from "./Rating";
+import Modal from "../modal/Modal";
+import { useState } from "react";
 
 export default function BookSlider({ data }) {
+  const [openModal, setOpenModal] = useState(false);
+  const [bookData, setBookData] = useState(null);
+
+  function handleModal(book) {
+    setOpenModal(true);
+    setBookData(book);
+  }
+
   return (
     <div className="book-slider-container">
       <Swiper
@@ -32,16 +42,19 @@ export default function BookSlider({ data }) {
               <Rating rating={item.rating} reviews={item.reviews} />
               <div className="book-slider-item-price">${item.price}</div>
               <div className="book-slider-icons-wrapper">
-                <i className="bi bi-eye-fill"></i>
+                <i
+                  onClick={() => handleModal(item)}
+                  className="bi bi-eye-fill"
+                ></i>
                 <i className="bi bi-cart-plus"></i>
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-
       <i className="bi bi-chevron-left book-slider-arrow-left"></i>
       <i className="bi bi-chevron-right book-slider-arrow-right"></i>
+      {openModal && <Modal bookData={bookData} setOpenModal={setOpenModal} />}
     </div>
   );
 }
