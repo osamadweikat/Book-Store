@@ -1,3 +1,4 @@
+import "./cart.css";
 import { cartInfo } from "../../data/cart";
 
 export default function Cart() {
@@ -7,7 +8,7 @@ export default function Cart() {
       <div className="cart-wrapper">
         <div className="cart-items">
           {cartInfo.map((item) => (
-            <div key={item.id} className="cart-items">
+            <div key={item.id} className="cart-item">
               <img
                 src={`/books/${item.image}`}
                 alt={item.title}
@@ -22,21 +23,27 @@ export default function Cart() {
                     <b>Author: </b> {item.author}
                   </div>
                 </div>
-                <div className="cart-item-quantity">
-                  <button>
-                    <i className="bi bi-plus-lg"></i>
-                  </button>
-                  <b>{item.quantity}</b>
-                  <button>
-                    <i className="bi bi-dash-lg"></i>
-                  </button>
+                <div>
+                  <div className="cart-item-quantity">
+                    <button>
+                      <i className="bi bi-plus-lg"></i>
+                    </button>
+                    <b>{item.quantity}</b>
+                    <button>
+                      <i className="bi bi-dash-lg"></i>
+                    </button>
+                  </div>
+                  <div className="cart-items-price">
+                    ${item.price * item.quantity}
+                  </div>
+                  <i className="bi bi-trash-fill"></i>
                 </div>
               </div>
             </div>
           ))}
         </div>
+        <div className="cart-order-summary">Order Summary</div>
       </div>
-      <div className="cart-order-summary">Order Summary</div>
     </div>
   );
 }
