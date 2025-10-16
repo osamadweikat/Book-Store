@@ -42,7 +42,31 @@ export default function Cart() {
             </div>
           ))}
         </div>
-        <div className="cart-order-summary">Order Summary</div>
+        <div className="cart-order-summary">
+          <div className="order-summary-title">ORDER SUMMARY</div>
+          <div className="order-summary-item">
+            <span>Subtotal</span>
+            <span>
+              $
+              {cartInfo.reduce((acc, cur) => acc + cur.price * cur.quantity, 0)}
+            </span>
+          </div>
+          <div className="order-summary-item">
+            <span>Shopping Cost</span>
+            <span>0</span>
+          </div>
+          <div className="order-summary-item">
+            <span>Discount</span>
+            <span>0</span>
+          </div>
+          <div className="order-summary-item">
+            <span>Total</span>
+            <span>
+              $
+              {cartInfo.reduce((acc, cur) => acc + cur.price * cur.quantity, 0)}
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   );
