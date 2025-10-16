@@ -94,3 +94,39 @@
   font-size: 32px;
   margin: 5px 0;
 }
+
+@media (max-width: 720px) {
+  .book {
+    padding: 30px 15px;
+  }
+  .book-description {
+    width: 100%;
+  }
+
+  .book-add-to-cart-input {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 520px) {
+  .book-content {
+    flex-direction: column;
+  }
+  .book-content-img {
+    width: 100%;
+  }
+  .book-content-info {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .book-icons {
+    flex-direction: column;
+  }
+
+  .book-icon {
+    margin-right: 0px;
+    margin-bottom: 50px;
+    font-size: 25px;
+  }
+}
