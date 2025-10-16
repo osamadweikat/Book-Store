@@ -1,3 +1,4 @@
+import "./book.css";
 import { useParams } from "react-router-dom";
 import { books } from "../../data/books";
 import Rating from "../../components/book-slider/Rating";
@@ -35,6 +36,23 @@ export default function Book() {
         </div>
       </div>
       <p className="book-description">{book.description}</p>
+      <div className="book-icons">
+        <div className="book-icon">
+          <small>Print Length</small>
+          <i className="bi bi-file-earmark-break"></i>
+          <b>{book.printLength} Pages</b>
+        </div>
+        <div className="book-icon">
+          <small>Language</small>
+          <i className="bi bi-globe"></i>
+          <b>{book.language}</b>
+        </div>
+        <div className="book-icon">
+          <small>Publication date</small>
+          <i className="bi bi-calendar3"></i>
+          <b>{book.PublicationDate}</b>
+        </div>
+      </div>
     </div>
   );
 }

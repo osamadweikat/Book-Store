@@ -12,7 +12,7 @@ export const books = [
     PublicationDate: "16 April 2018",
     inStock: true,
     description:
-      "Atomic Habits offers a proven framework for improving every day. James Clear reveals practical strategies for forming good habits, breaking bad ones, and mastering the tiny behaviors that lead to remarkable results. Drawing on scientific research, he shows how small, consistent changes compound over time to create massive success. This book helps readers design their environment and mindset for lasting transformation.",
+      "Atomic Habits is more than a self-help book—it’s a science-backed blueprint for changing your life one small habit at a time. James Clear dissects the psychology of behavior change and reveals how to make tiny adjustments that yield extraordinary outcomes. He explains the power of the ‘compound effect,’ where consistent, small improvements accumulate into remarkable success over time. Clear also tackles why people fail to change, how identity shapes behavior, and how to redesign your environment to make good habits inevitable. The book includes practical frameworks like the ‘Four Laws of Behavior Change’—make it obvious, make it attractive, make it easy, make it satisfying. Atomic Habits is both deeply insightful and incredibly actionable, offering readers tools to rebuild their routines, boost productivity, and achieve sustainable personal growth.",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export const books = [
     PublicationDate: "1 March 2015",
     inStock: true,
     description:
-      "Confess is a powerful and emotional love story that explores secrets, regret, and forgiveness. When Auburn Reed walks into Owen Gentry’s art studio, she doesn’t expect her life to change forever. Hoover masterfully blends art, emotion, and destiny in a narrative that keeps readers on edge. The novel dives deep into how love can heal even the most painful pasts while revealing the beauty of truth.",
+      "Confess by Colleen Hoover is an emotionally charged novel that intertwines love, secrets, and the power of art. The story follows Auburn Reed, a young woman determined to rebuild her life after unimaginable loss. When she stumbles into the art studio of the mysterious Owen Gentry, she becomes captivated by his work—and by him. But Owen harbors painful secrets that could destroy their fragile connection. Through poetic storytelling and raw emotion, Hoover explores the vulnerability of trust, the burden of guilt, and the courage it takes to forgive. The novel beautifully balances heartbreak and hope, reminding readers that even our darkest confessions can lead to redemption. With vivid characters, intense chemistry, and powerful dialogue, Confess captures the complexity of human relationships and the art of healing through love.",
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ export const books = [
     PublicationDate: "1 June 2019",
     inStock: true,
     description:
-      "The Trouble With Hating You is a witty romantic comedy full of heart and humor. It follows Liya Thakkar, a successful engineer who avoids marriage, and Jay Shah, the man her parents want her to marry. When fate throws them together at work, sparks fly—both fiery and romantic. Sajni Patel delivers a bold story about love, independence, cultural identity, and learning to open your heart.",
+      "The Trouble With Hating You is a fierce, funny, and empowering romantic comedy that challenges traditional cultural expectations. Liya Thakkar is a bold, successful biochemical engineer who has no interest in the arranged marriage her conservative Indian parents want for her. When she meets Jay Shah, a handsome lawyer with his own scars, their first encounter ends in disaster—but destiny throws them together at work. What begins as animosity slowly transforms into mutual respect, friendship, and eventually something deeper. Sajni Patel uses sharp humor and heartfelt moments to explore themes of independence, trauma, and identity. The book highlights the tension between modern ambition and cultural tradition, while celebrating female strength and resilience. With witty banter, emotional depth, and authentic representation, it’s a story that proves love can bloom even in the most unexpected circumstances.",
   },
   {
     id: 4,
@@ -57,7 +57,7 @@ export const books = [
     PublicationDate: "8 October 2012",
     inStock: true,
     description:
-      "Hopeless is an emotional rollercoaster that explores deep trauma, love, and redemption. Sky meets Dean Holder, a mysterious boy with a dark past, and her world begins to unravel as painful truths surface. Colleen Hoover crafts a raw and heart-wrenching narrative that grips readers from start to finish. This story reminds us that sometimes facing the past is the only way to find hope for the future.",
+      "Hopeless is an unforgettable story of heartbreak, trauma, and the transformative power of love. Sky Davis has grown up sheltered from the world, until she meets Dean Holder—a boy with a reputation as dark as his eyes. Their connection is instant and electric, but beneath the surface lies a web of secrets that will change both of their lives forever. As Sky begins to uncover truths about her past, she is forced to confront pain she never knew existed. Colleen Hoover masterfully combines romance and suspense, weaving a narrative that explores consent, memory, and healing with brutal honesty. The emotional intensity builds with every chapter, pulling readers into Sky’s journey from despair to hope. More than a love story, Hopeless is a raw exploration of survival, forgiveness, and the courage it takes to reclaim your life after tragedy.",
   },
   {
     id: 5,
@@ -72,7 +72,7 @@ export const books = [
     PublicationDate: "27 April 2017",
     inStock: true,
     description:
-      "Rich Dad Poor Dad challenges the conventional approach to money and education. Robert Kiyosaki shares lessons he learned from his two fathers—his real father (poor dad) and the father of his best friend (rich dad). The book reveals how to think differently about wealth, investments, and financial independence. It encourages readers to build assets, take risks, and achieve financial freedom through smart choices.",
+      "Rich Dad Poor Dad revolutionized how millions of people think about money, investing, and financial freedom. Robert Kiyosaki draws lessons from two key figures in his life: his biological father, the educated but financially poor man, and his best friend’s father, the wealthy entrepreneur who became his mentor. Through this contrast, Kiyosaki teaches readers how to break free from the cycle of working for money and instead make money work for them. He demystifies the difference between assets and liabilities, challenges the traditional education system, and emphasizes the importance of financial literacy. The book offers insights into building passive income, taking calculated risks, and creating long-term wealth. With practical examples and motivational wisdom, it inspires readers to challenge conventional thinking and start building a path toward financial independence and lasting prosperity.",
   },
   {
     id: 6,
@@ -87,7 +87,7 @@ export const books = [
     PublicationDate: "17 July 2016",
     inStock: true,
     description:
-      "One True Loves is a captivating exploration of love, loss, and destiny. Emma’s life is torn apart when her husband Jesse disappears in a helicopter crash. Years later, she finds happiness again—until Jesse unexpectedly returns. Taylor Jenkins Reid weaves a heartfelt story about how people change and grow, forcing readers to ask: can a person have more than one true love? It’s both heartbreaking and hopeful.",
+      "One True Loves is a deeply moving exploration of love, grief, and identity. Emma Blair thought she had found her forever with Jesse, her adventurous high school sweetheart. But when Jesse goes missing in a helicopter crash, Emma’s world shatters. Years later, after she rebuilds her life and falls in love again, Jesse suddenly returns—alive. Torn between her past and her present, Emma must confront the impossible question: can you have more than one true love? Taylor Jenkins Reid crafts a story that is both heartbreaking and uplifting, examining how people change, how love evolves, and how loss shapes who we become. The novel beautifully captures the complexity of human emotion and the resilience of the human spirit, leaving readers reflecting on what it truly means to love and to let go.",
   },
   {
     id: 7,
@@ -102,7 +102,7 @@ export const books = [
     PublicationDate: "1 September 2005",
     inStock: true,
     description:
-      "Think and Grow Rich remains one of the most influential success books ever written. Napoleon Hill draws on stories of great achievers like Edison and Ford to reveal the principles behind personal wealth and accomplishment. He emphasizes the power of thought, persistence, and faith in achieving any goal. This timeless guide inspires readers to turn their dreams into reality through discipline and mindset mastery.",
+      "Think and Grow Rich is a timeless masterpiece that has guided generations toward success and fulfillment. Drawing from interviews with more than 500 of history’s most successful people, including Henry Ford, Thomas Edison, and Andrew Carnegie, Napoleon Hill reveals the psychological principles behind wealth and achievement. The book teaches that success begins with a clear desire, faith, and persistence, combined with the power of organized planning. Hill delves into the subconscious mind, the role of imagination, and the importance of surrounding yourself with like-minded individuals. Each chapter builds a roadmap toward achieving personal and financial mastery through disciplined thinking. Even decades after its first publication, its lessons remain profoundly relevant. This book is not just about money—it’s about unlocking your full potential and creating a purpose-driven, abundant life.",
   },
   {
     id: 8,
@@ -117,7 +117,7 @@ export const books = [
     PublicationDate: "23 March 2017",
     inStock: true,
     description:
-      "Never Split the Difference takes readers inside the high-stakes world of FBI hostage negotiations. Former FBI negotiator Chris Voss shares powerful tactics that can be applied to business and everyday life. Through real-life stories and psychological insights, he shows how to win negotiations without aggression. This book teaches you how to use empathy, communication, and emotional intelligence to achieve better results.",
+      "Never Split The Difference is a gripping look into the world of negotiation through the eyes of former FBI hostage negotiator Chris Voss. Drawing on years of high-stakes experience, Voss shares real-life stories and the psychological tactics that helped him save lives and win impossible deals. He reveals that negotiation is not about logic—it’s about emotion, empathy, and connection. Using principles like tactical empathy, calibrated questions, and mirroring, readers learn how to influence outcomes in business, relationships, and everyday life. The book offers practical techniques supported by neuroscience and behavioral psychology, making it as engaging as it is educational. Every chapter is filled with actionable tools that empower readers to communicate effectively and confidently. Whether negotiating a salary, a sale, or a family decision, this book transforms how you approach persuasion forever.",
   },
   {
     id: 9,
@@ -132,7 +132,7 @@ export const books = [
     PublicationDate: "4 December 2018",
     inStock: true,
     description:
-      "Good Vibes, Good Life is an inspiring guide to self-love and personal growth. Vex King shares practical lessons on how to overcome negativity, heal from past pain, and attract positive energy. Through simple wisdom and heartfelt storytelling, the book encourages readers to embrace gratitude, mindfulness, and self-worth. It’s a roadmap for creating a happier, more fulfilling life from the inside out.",
+      "Good Vibes, Good Life by Vex King is an uplifting and transformative guide to mastering your mindset and manifesting a happier life. Through deeply personal experiences and practical insights, King teaches readers how to turn pain into strength, replace negative energy with positivity, and practice genuine self-love. The book explores the importance of boundaries, gratitude, and mindfulness in building emotional resilience. Each chapter combines motivational wisdom with real-world strategies for healing and growth. Vex King’s voice is compassionate yet empowering, reminding readers that self-worth is the foundation for a fulfilling life. With its mix of inspiration, spirituality, and psychology, this book is a modern guide for anyone seeking peace, purpose, and confidence in a chaotic world. It encourages you to not only live better—but to truly vibrate higher daily.",
   },
   {
     id: 10,
@@ -147,6 +147,6 @@ export const books = [
     PublicationDate: "12 September 2021",
     inStock: true,
     description:
-      "The Story of a Lonely Boy is a touching narrative about isolation, resilience, and hope. It follows a young boy struggling to find connection in a world that often misunderstands him. Through poetic language and emotional depth, Villanueva explores the pain of loneliness and the power of self-discovery. The novel beautifully captures the universal desire to belong and to be truly seen.",
+      "The Story of a Lonely Boy is a tender and deeply emotional novel that captures the ache of isolation and the longing for connection. It tells the journey of a quiet, introspective boy who grows up feeling unseen by the world. As he navigates heartbreak, rejection, and moments of fleeting hope, he discovers the power of imagination and resilience. Korina Villanueva’s lyrical writing brings readers into the boy’s internal world, exploring themes of mental health, childhood trauma, and the search for belonging. The story unfolds with empathy and honesty, illustrating how even the smallest acts of kindness can change a life. It’s a moving portrayal of growth and healing that speaks to anyone who has ever felt alone, reminding us that solitude can be both a curse and a source of profound strength.",
   },
 ];
