@@ -82,6 +82,25 @@
   color: gray;
 }
 
+.header-middle-cart-wrapper {
+  position: relative;
+}
+
+.cart-notification {
+  position: absolute;
+  top: -7px;
+  right: -12px;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+
 .header-middle-cart-wrapper i {
   font-size: 44px;
   color: white;

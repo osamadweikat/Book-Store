@@ -1,10 +1,12 @@
 import "./cart.css";
-import { cartInfo } from "../../data/cart";
 import OrderSummary from "./OrderSummary";
 import CartItem from "./CartItem";
+import { useContext } from "react";
+import CartContext from "../../context/cartContext";
 
 export default function Cart() {
-  const totalPrice = cartInfo.reduce(
+  const { cartItems } = useContext(CartContext);
+  const totalPrice = cartItems.reduce(
     (acc, cur) => acc + cur.price * cur.quantity,
     0
   );
@@ -13,7 +15,7 @@ export default function Cart() {
       <div className="cart-title">Your Shopping Cart</div>
       <div className="cart-wrapper">
         <div className="cart-items">
-          {cartInfo.map((item) => (
+          {cartItems.map((item) => (
             <CartItem key={item.id} item={item} />
           ))}
         </div>

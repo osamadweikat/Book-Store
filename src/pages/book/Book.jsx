@@ -2,10 +2,14 @@ import "./book.css";
 import { useParams } from "react-router-dom";
 import { books } from "../../data/books";
 import Rating from "../../components/book-slider/Rating";
+import { useState, useContext } from "react";
+import CartContext from "../../context/cartContext";
 
 export default function Book() {
   const { id } = useParams();
   const book = books.find((b) => b.id === +id);
+  const { addToCart } = useContext(CartContext);
+  const [qty, setQty] = useState(1);
 
   return (
     <div className="book">
@@ -27,8 +31,13 @@ export default function Book() {
               min="1"
               max="100"
               className="book-add-to-cart-input"
+              value={qty}
+              onChange={(e) => setQty(e.target.value)}
             />
-            <button className="book-add-to-cart-btn">
+            <button
+              onClick={() => addToCart({ ...book, quantity: qty })}
+              className="book-add-to-cart-btn"
+            >
               <i className="bi bi-cart-plus"></i>
               Add To Cart
             </button>

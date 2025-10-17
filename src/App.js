@@ -10,10 +10,12 @@ import Login from "./pages/forms/Login";
 import Register from "./pages/forms/Register";
 import Contact from "./pages/contact/Contact";
 import Book from "./pages/book/Book";
+import ScrollToTop from "./components/scroll-to-top/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
