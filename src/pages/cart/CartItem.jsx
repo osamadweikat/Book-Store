@@ -1,5 +1,5 @@
-export default function CartItem({ item }) {
-  const { image, title, author, quantity, price } = item;
+export default function CartItem({ item, addToCart, removeFromCart }) {
+  const { image, title, author, quantity, price, id } = item;
   return (
     <div className="cart-item">
       <img src={`/books/${image}`} alt={title} className="cart-item-img" />
@@ -14,16 +14,31 @@ export default function CartItem({ item }) {
         </div>
         <div>
           <div className="cart-item-quantity">
-            <button>
+            <button
+              onClick={() =>
+                addToCart({ ...item, quantity: item.quantity + 1 })
+              }
+            >
               <i className="bi bi-plus-lg"></i>
             </button>
             <b>{quantity}</b>
-            <button>
+            <button
+              onClick={() => {
+                item.quantity > 1
+                  ? addToCart({ ...item, quantity: item.quantity - 1 })
+                  : removeFromCart(id);
+              }}
+            >
               <i className="bi bi-dash-lg"></i>
             </button>
           </div>
-          <div className="cart-items-price">${price * quantity}</div>
-          <i className="bi bi-trash-fill"></i>
+          <div className="cart-items-price">
+            ${(price * quantity).toFixed(2)}
+          </div>
+          <i
+            onClick={() => removeFromCart(id)}
+            className="bi bi-trash-fill"
+          ></i>
         </div>
       </div>
     </div>

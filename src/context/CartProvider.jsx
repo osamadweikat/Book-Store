@@ -5,7 +5,15 @@ export default function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
 
   function addToCart(item) {
-    setCartItems((prev) => [...prev, item]);
+    const isExist = cartItems.find((cart) => cart.id === item.id);
+
+    if (isExist) {
+      setCartItems(
+        cartItems.map((cartItem) => (cartItem.id === item.id ? item : cartItem))
+      );
+    } else {
+      setCartItems((prev) => [...prev, item]);
+    }
   }
 
   function removeFromCart(id) {
