@@ -25,7 +25,7 @@ export default function Login() {
   };
   return (
     <div className="form-wrapper">
-      <ToastContainer />
+      <ToastContainer theme="colored" />
       <h1 className="form-title">Login to your account</h1>
       <form onSubmit={formSubmitHandler} className="form">
         <input
