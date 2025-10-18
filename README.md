@@ -1,6 +1,6 @@
 # 📚 **Brands Book Store**
 
-> 🛍️ *An elegant and modern online bookstore built with React — discover, explore, and shop your favorite books with style.*
+> 🛍️ _An elegant and modern online bookstore built with React — discover, explore, and shop your favorite books with style._
 
 🌐 **Live Demo:** [osamabookstore.netlify.app](https://osamabookstore.netlify.app)
 
@@ -9,53 +9,55 @@
 ## 🧠 **About the Project**
 
 **Brands Book Store** is a **frontend React web application** designed to provide a seamless online bookstore experience.  
-It showcases book collections, authors, and detailed product pages with an elegant and responsive user interface.  
+It showcases book collections, authors, and detailed product pages with an elegant and responsive user interface.
 
-This project demonstrates strong **frontend architecture**, reusable React components, and modern UI design principles.  
+This project demonstrates strong **frontend architecture**, reusable React components, and modern UI design principles.
 
 ---
 
 ## ⚙️ **Tech Stack & Tools**
 
-| Category | Technologies |
-|-----------|---------------|
-| 💻 **Frontend Framework** | React.js |
-| 🎨 **Styling** | CSS3, Bootstrap 5 |
-| 🧭 **Routing** | React Router DOM |
-| 🧠 **State Management** | React Hooks (useState, useEffect, useContext) |
-| 🌸 **Icons** | Bootstrap Icons |
-| 🧩 **Components Used** | Modal, Scroll-To-Top, Header, Footer, Book Slider |
-| 🧰 **Packages Installed** | react-router-dom, bootstrap, bootstrap-icons |
-| ☁️ **Deployment** | Netlify |
+| Category                  | Technologies                                      |
+| ------------------------- | ------------------------------------------------- |
+| 💻 **Frontend Framework** | React.js                                          |
+| 🎨 **Styling**            | CSS3, Bootstrap 5                                 |
+| 🧭 **Routing**            | React Router DOM                                  |
+| 🧠 **State Management**   | React Hooks (useState, useEffect, useContext)     |
+| 🌸 **Icons**              | Bootstrap Icons                                   |
+| 🧩 **Components Used**    | Modal, Scroll-To-Top, Header, Footer, Book Slider |
+| 🧰 **Packages Installed** | react-router-dom, bootstrap, bootstrap-icons      |
+| ☁️ **Deployment**         | Netlify                                           |
 
 ---
 
 ## 📁 **Project Structure**
+
 📦 **src**
+
 - 📂 **components**
-  - 📂 book-slider  
-  - 📂 footer  
-  - 📂 header  
-  - 📂 heading-title  
-  - 📂 modal  
-  - 📂 scroll-to-top  
-  - 📂 services  
-  - 📂 slider  
-- 📂 **context**  
-- 📂 **data**  
-- 📂 **images**  
+  - 📂 book-slider
+  - 📂 footer
+  - 📂 header
+  - 📂 heading-title
+  - 📂 modal
+  - 📂 scroll-to-top
+  - 📂 services
+  - 📂 slider
+- 📂 **context**
+- 📂 **data**
+- 📂 **images**
 - 📂 **pages**
-  - 📂 about  
-  - 📂 authors  
-  - 📂 book  
-  - 📂 cart  
-  - 📂 contact  
-  - 📂 forms  
-  - 📂 home  
-- 📜 App.js  
-- 📜 App.css  
-- 📜 index.js  
-- 📜 index.css  
+  - 📂 about
+  - 📂 authors
+  - 📂 book
+  - 📂 cart
+  - 📂 contact
+  - 📂 forms
+  - 📂 home
+- 📜 App.js
+- 📜 App.css
+- 📜 index.js
+- 📜 index.css
 
 ---
 
@@ -68,7 +70,7 @@ This project demonstrates strong **frontend architecture**, reusable React compo
 ✅ Contact Form — lets users get in touch easily  
 ✅ About Us Page — introduces the story and mission behind the store  
 ✅ Scroll-To-Top Component — smooth UX when navigating pages  
-✅ Fully Responsive Design — adapts to all screen sizes  
+✅ Fully Responsive Design — adapts to all screen sizes
 
 ---
 
@@ -80,31 +82,35 @@ This project demonstrates strong **frontend architecture**, reusable React compo
 ✨ Clear navigation & footer sections  
 ✨ Eye-catching book slider component  
 ✨ Bootstrap-based responsive layout  
-✨ Icons from Bootstrap Icons library  
- 
+✨ Icons from Bootstrap Icons library
+
 ---
 
 ## 🧩 **Libraries & Dependencies Used**
 
 📦 **Core Libraries:**
-- react  
-- react-dom  
-- react-router-dom  
+
+- react
+- react-dom
+- react-router-dom
 
 🎨 **UI & Styling:**
-- bootstrap  
-- bootstrap-icons  
-- custom CSS  
+
+- bootstrap
+- bootstrap-icons
+- custom CSS
 
 🧠 **State & Functionality:**
+
 - React Hooks (useState, useEffect, useContext)
 
 ⚙️ **Utilities & Components:**
-- Modal  
-- Scroll-To-Top  
-- Book Slider  
-- Header / Footer  
-- Custom Services for data handling  
+
+- Modal
+- Scroll-To-Top
+- Book Slider
+- Header / Footer
+- Custom Services for data handling
 
 ---
 
@@ -126,5 +132,8 @@ npm start
 # 🌐 The app will be available at:
 http://localhost:3000
 
+```
 
-⭐ If you like this project, don’t forget to star it on GitHub!
+---
+
+## ⭐ **If you like this project, don’t forget to star it on GitHub!**
