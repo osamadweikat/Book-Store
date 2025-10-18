@@ -28,6 +28,7 @@
   font-size: 27px;
   font-weight: 500;
   color: var(--main-color);
+  text-decoration: none;
 }
 
 .header-top-phone i,
