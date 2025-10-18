@@ -126,6 +126,5 @@ npm start
 # 🌐 The app will be available at:
 http://localhost:3000
 
----
 
-## ⭐ **If you like this project, don’t forget to star it on GitHub!**
+⭐ If you like this project, don’t forget to star it on GitHub!
